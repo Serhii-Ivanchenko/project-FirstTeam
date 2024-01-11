@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+    text-align: start;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        margin-bottom: 50px;
+        font-size: 48px;
+        line-height: 1.13;
+    }
+}
+
+.accent {
+    color: #BEA69E;
+}
