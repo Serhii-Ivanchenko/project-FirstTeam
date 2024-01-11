@@ -1,0 +1,105 @@
+.hero{
+    border-radius: 30px;
+    background: #1D1D1D;
+    padding: 40px 20px 0 20px;
+    max-width: 1440px;
+    background-image: url(../img/background/Graphic_1x.png);
+}
+.hero-name{
+    max-width: 295px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 20px;
+    /* margin-right: auto; */
+}
+@media only screen and (min-width: 768px) {
+    .hero-name{
+        max-width: 517px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-name {
+            max-width: 563px;
+        }
+}
+.hero-name-span{
+    color: #BEA69E;
+    font-style: italic;
+    font-weight: 400;
+}
+.hero-text{
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    max-width: 295px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.hero-reviews-wrapper{
+    display: flex;
+    gap: 40px;
+}
+.hero-reviews-list{
+    display: flex;
+}
+.hero-reviews-item{
+    min-width: 44px;
+    min-height: 44px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid #1D1D1D;
+    background: var(--avatar-user-square-caitlyn-king-neutral-background, url(<path-to-image>), lightgray 50% / cover no-repeat, #E0E0E0);
+    /* position: absolute;
+    left: -50px;
+    top: 20px; */
+}
+/* .hero-reviews-list{
+    position: relative;
+} */
+
+.hero-reviews-id span {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.04em;
+}
+.hero-icon-arrow{
+    fill: #FFFFFF;
+    
+
+}
+.hero-icon-star{
+    fill: none;
+    stroke: #121212;
+}
+.icon-star-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background: #BEA69E;
+    flex-shrink: 0;
+}
+.hero-wrapper-second{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.hero-reviews-id{
+    display: flex;
+    align-items: center;
+}
+.id-text{
+    margin-right: 4px;
+}
+
+.hero-reviews-image{
+    background: transparent;
+}
+.hero-reviews-container{
+    min-width: 109px;
+}
+
