@@ -1,7 +1,45 @@
 .footer {
-  background-image: url();
+  background-image: url(../img/background/Graphic_mobile_1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 20px;
   padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../img/background/Graphic_mobile_2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url(../img/background/Graphic_tablet_1x.png);
+    padding-bottom: 25px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../img/background/Graphic_tablet_2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 74px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-logo {
@@ -9,12 +47,33 @@
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+}
+
 .footer-logo-icon {
   fill: #ffffff;
+  width: 127px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo-icon {
+    width: 123px;
+    height: 16px;
+  }
 }
 
 .footer-address {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-bottom: 0;
+  }
 }
 
 .address {
@@ -25,12 +84,20 @@
 
 .footer-tel {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .footer-nav {
   display: flex;
   gap: 40px;
   margin-bottom: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    gap: 25px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-socials {
@@ -49,17 +116,31 @@
   line-height: normal;
   text-transform: uppercase;
 }
-
+/* neb */
 .footer-form {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 40px;
 }
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    margin-bottom: 0;
+  }
+}
+
 .footer-label {
   display: flex;
   flex-grow: 1;
   max-width: 267px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-label {
+    flex-grow: 0;
+    max-width: 178px;
+  }
 }
 
 .footer-input {
@@ -93,7 +174,14 @@
   line-height: 1.33;
 }
 
-.wrapper {
+@media screen and (min-width: 768px) {
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.wrapper-bottom {
   display: flex;
   justify-content: space-between;
 }
