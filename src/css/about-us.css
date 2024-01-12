@@ -5,21 +5,20 @@
 }
 
 .about-title{
-  color: #fff;
-  /* font-family: DM sans; */
+  
   font-size: 28px;
   font-weight: 500;
-  line-height: 32px;
-  letter-spacing: -1.12px;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
 }
 
 .us-title{
   color: #BEA69E;
-  font-family: DM Sans;
+  
   font-size: 28px;
   font-weight: 500;
-  line-height: 32px;
-  letter-spacing: -1.12px;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
 }
 
 .about-img{
@@ -28,8 +27,8 @@
 }
 
 .about-text{
-  color: #fff;
-  font-family: DM Sans;
+  /* color: #fff;
+  font-family: DM Sans; */
   font-size: 14px;
   line-height: 1.28;
  }
