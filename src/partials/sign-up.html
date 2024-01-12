@@ -1,0 +1,89 @@
+<div class="container">
+  <section class="section signup">
+    <div>
+      <h2 id="sing-up" class="signup-title">
+        Sign <span class="accent">Up</span>
+      </h2>
+      <p class="signup-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form class="signup-form">
+        <div class="signup--wrapper">
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter your name"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words."
+            class="signup-input"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            pattern="[a-zA-Z0-9._%±]+@ [a-zA-Z0-9.-]+\. [a-zA-Z0-9_-]+"
+            class="signup-input"
+          />
+          <textarea
+            name="feedback"
+            rows="3"
+            placeholder="Message"
+            class="signup-input textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="signup-button">Send</button>
+      </form>
+      <p class="signup-script">
+        By clicking on &#8220;Send&#8221; button, you agree to our
+        <a href="" class="signup-link">Privacy Policy</a>, <br />
+        and allow Promodo to use this information for marketing purposes.
+      </p>
+    </div>
+    <div class="signup-wrapper-picture">
+      <div class="signup-lens">
+        <picture>
+          <source
+            srcset="
+              ../img/sign-up/lens_1x.webp 1x,
+              ../img/sign-up/lens_2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            srcset="
+              ../img/sign-up/lens_1x.png 1x,
+              ../img/sign-up/lens_2x.png 2x
+            "
+            src="../img/sign-up/lens_1x.png"
+            width="150"
+            height="142"
+            alt="Lens"
+          />
+        </picture>
+      </div>
+      <div class="signup-camera">
+        <picture>
+          <source
+            srcset="
+              ../img/sign-up/camera_1x.webp 1x,
+              ../img/sign-up/camera_2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            srcset="
+              ../img/sign-up/camera_1x.png 1x,
+              ../img/sign-up/camera_2x.png 2x
+            "
+            src="../img/sign-up/camera_1x.png"
+            width="240"
+            height="296"
+            alt="Camera"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+</div>
