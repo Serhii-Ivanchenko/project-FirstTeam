@@ -14,7 +14,6 @@
 
 .us-title{
   color: #BEA69E;
-  
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
@@ -22,15 +21,20 @@
 }
 
 .about-img{
-  border-radius: 1000px;
   margin-bottom: 40px;
 }
 
+@media screen (min-width: 1280px) {
+  .picture-about {
+    border-radius: 1000px;
+  }
+}
+
+
 .about-text{
-  /* color: #fff;
-  font-family: DM Sans; */
   font-size: 14px;
   line-height: 1.28;
+  letter-spacing: -0.02em;
  }
 
 .wrapper-abouttext:not(:last-child){
