@@ -5,8 +5,31 @@
 
   <div class="about-img">
   <picture>
-    <source media="(min-width: 320px)" srcset="./img/about-us/about_us_mobile_1x.webp 1x, ./img/about-us/about_us_mobile_2x.webp 2x /">
-    <img src="./img/about-us/about_us_mobile_1x.webp" alt="">
+    <source media="(max-width: 576px)" 
+    srcset="
+    ./img/about-us/about_us_mobile_1x.webp 1x, 
+    ./img/about-us/about_us_mobile_2x.webp 2x,
+    ./img/about-us/about_us_mobile_1x.jpg 1x,
+    ./img/about-us/about_us_mobile_2x.jpg 2x"
+    type="image/webp" />
+
+    <source media="(max-width: 767px)"
+    srcset="
+    ./img/about-us/about_us_tablet_1x.webp 1x,
+    ./img/about-us/about_us_tablet_2x.webp 2x,
+    ./img/about-us/about_us_tablet_1x.jpg 1x,
+    ./img/about-us/about_us_tablet_2x.jpg 2x"
+    type="image/webp" />
+
+    <source media="(max-width: 1280px)" 
+    srcset="
+    ./img/about-us/about_us_desk_1x.webp 1x,
+    ./img/about-us/about_us_desk_2x.webp 2x,
+    ./img/about-us/about_us_desk_1x.jpg 1x,
+    ./img/about-us/about_us_desk_2x.jpg 2x"
+    type="image/webp" />
+
+    <img src="./img/about-us/about_us_mobile_1x.jpg" alt="fotocamera" />
   </picture>
   </div>
   <div class="wrapper-abouttext">
