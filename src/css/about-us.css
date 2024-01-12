@@ -1,3 +1,4 @@
+/*title about*/
 .about{
   display: flex;
   justify-content: flex-start;
@@ -5,11 +6,17 @@
 }
 
 .about-title{
-  
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.04em;
+}
+
+@media (min-width: 768px) {
+  .about-title{
+    font-size: 48px;
+    line-height: 1.12;
+  }
 }
 
 .us-title{
@@ -20,25 +27,73 @@
   letter-spacing: -0.04em;
 }
 
+@media (min-width: 768px){
+  .us-title{
+    font-size: 48px;
+    line-height: 1.12;
+  }
+}
+/* img about*/
 .about-img{
   margin-bottom: 40px;
 }
-
-@media screen (min-width: 1280px) {
-  .picture-about {
-    border-radius: 1000px;
-  }
-}
-
-
+/* text about*/
 .about-text{
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
  }
+ 
 
-.wrapper-abouttext:not(:last-child){
-  margin-bottom: 20px;
+ @media (min-width: 768px) {
+  .about-text{
+    font-size: 16px;
+    line-height: 1.25;
+  }
  }
+
+ @media (min-width: 320px) and (max-width: 767px) {
+  .wrapper-abouttext-tablet{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+ }
+
+ @media (min-width: 768px) {
+  .wrapper-abouttext-tablet {
+    display: flex;
+    gap: 40px;
+    }
+ }
+ 
+@media (max-width: 767px) {
+  .wrapper-abouttext:not(:last-child) {
+      margin-bottom: 20px;
+    }
+}
+
+.wrapper-abouttext1{
+  display: block;
+  width: 280px;
+}
+
+.wrapper-abouttext2{
+  display: block;
+  width: 280px;
+  height: 215px;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .wrapper-desktop {
+    display:flex;
+    gap:40px;
+  }
+
+  .wrapper-abouttext-tablet{
+    gap:20px;
+  }
+}
 
 
