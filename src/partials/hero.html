@@ -1,5 +1,6 @@
-<section class="hero">
-  <div class="container">
+<section class="hero section">
+  <div class="container hero-container">
+    <!-- title -->
     <h1 class="hero-name">
       Discover the magic of <span class="hero-name-span">photography</span> in
       our school
@@ -9,76 +10,86 @@
       learn the basics of composition, master technical skills, translate your
       unique ideas.
     </p>
+    <!-- hero-rewiews -->
     <div class="hero-reviews-wrapper">
       <div class="hero-reviews-container">
-        <ul class="hero-reviews-list">
-          <li class="hero-reviews-item">
-            <picture>
-              <!-- <source 
-            type="image/webp"
-            srcset="
-            ../img/hero/hero_girl_1_1x.webp 320w,
-            ../img/hero/hero_girl_1_2x.webp 640w" 
-             /> -->
-              <img
-                class="hero-reviews-image"
-                src="../img/hero/hero_girl_1_1x.png"
-                alt="girl"
-                srcset="
-                  ../img/hero/hero_girl_1_1x.png 1x,
-                  ../img/hero/hero_girl_1_2x.png 2x
-                "
-              />
-            </picture>
-          </li>
-          <li class="hero-reviews-item">
-            <picture>
-              <!-- <source 
-            type="image/webp"
-            srcset="
-            ../img/hero/hero_boy_1x.webp 320w,
-            ../img/hero/hero_boy_2x.webp 640w" />
-            > -->
-              <img
-                class="hero-reviews-image"
-                src="../img/hero/hero_boy_1x.png"
-                alt="boy"
-                srcset="
-                  ../img/hero/hero_boy_1x.png 1x,
-                  ../img/hero/hero_boy_2x.png 2x
-                "
-              />
-            </picture>
-          </li>
-          <li class="hero-reviews-item">
-            <picture>
-              <!-- <source 
-            type="image/webp"
-            srcset="
-            ../img/hero/hero_girl_1x.webp 320w,
-            ../img/hero/hero_girl_2x.webp 640w"
-             /> -->
-              <img
-                class="hero-reviews-image"
-                src="../img/hero/hero_girl_1x.png"
-                alt="girl"
-                srcset="
-                  ../img/hero/hero_girl_1x.png 1x,
-                  ../img/hero/hero_girl_2x.png 2x
-                "
-              />
-            </picture>
-          </li>
-        </ul>
-
-        <a class="hero-reviews-id" href="#reviews">
-          <span class="id-text">Our happy <br />students</span>
+        <div class="hero-img-container">
+          <ul class="hero-reviews-list">
+            <li class="hero-reviews-item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../img/hero/girl_1_1x.webp 1x,
+                    ../img/hero/girl_1_2x.webp 2x
+                  "
+                />
+                <img
+                  class="hero-reviews-image"
+                  src="../img/hero/girl_1_1x.png"
+                  srcset="
+                    ../img/hero/girl_1_1x.png 1x,
+                    ../img/hero/girl_1_2x.png 2x
+                  "
+                  alt="girl"
+                  width="44"
+                  height="44"
+                />
+              </picture>
+            </li>
+            <li class="hero-reviews-item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../img/hero/boy_1x.webp 1x,
+                    ../img/hero/boy_2x.webp 2x
+                  "
+                />
+                <img
+                  class="hero-reviews-image"
+                  src="../img/hero/boy_1x.png"
+                  srcset="../img/hero/boy_1x.png 1x, ../img/hero/boy_2x.png 2x"
+                  alt="boy"
+                  width="44"
+                  height="44"
+                />
+              </picture>
+            </li>
+            <li class="hero-reviews-item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../img/hero/girl_2_1x.webp 1x,
+                    ../img/hero/girl_2_2x.webp 2x
+                  "
+                />
+                <img
+                  class="hero-reviews-image"
+                  src="../img/hero/girl_2_1x.png"
+                  srcset="
+                    ../img/hero/girl_2_1x.png 1x,
+                    ../img/hero/girl_2_2x.png 2x
+                  "
+                  alt="girl"
+                  width="44"
+                  height="44"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-wrapper-first">
+          <a class="hero-reviews-id" href="#reviews">
+            <span class="id-text">Our happy <br />students</span>
+          </a>
           <span
             ><svg class="hero-icon-arrow" width="18" height="9">
               <use href="../img/icons.svg#icon-Arrow-straight"></use>
             </svg>
           </span>
-        </a>
+        </div>
       </div>
       <div class="hero-wrapper-second">
         <span class="icon-star-span">
@@ -86,60 +97,67 @@
             <use href="../img/icons.svg#icon-star"></use>
           </svg>
         </span>
-        <p>Reviews <span>+1500</span></p>
+        <p>
+          Reviews <br />
+          <span>+1500</span>
+        </p>
       </div>
     </div>
-    <picture>
-      <!-- Mobile screen -->
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ../img/hero/hero_mobile_1x.png 1x,
-          ../img/hero/hero_mobile_2x.png 2x
-        "
-      />
-      <source
-        type="image/webp"
-        srcset="
-          ../img/hero/hero_mobile_1x.webp 1x,
-          ../img/hero/hero_mobile_2x.webp 2x
-        "
-      />
-      <img
-        class="hero-reviews-image"
-        src="../img/hero/hero_mobile_1x.png"
-        alt="photographer"
-      />
-      <!-- Tablet screen -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ../img/hero/hero_tablet_1x.png 1x,
-          ../img/hero/hero_tablet_2x.png 2x
-        "
-      />
-      <source
-        type="image/webp"
-        srcset="
-          ../img/hero/hero_tablet_1x.webp 1x,
-          ../img/hero/hero_tablet_2x.webp 2x
-        "
-      />
-      <!-- Desktop screen -->
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ../img/hero/hero_desk_1x.png 1x,
-          ../img/hero/hero_desk_2x.png 2x
-        "
-      />
-      <source
-        type="image/webp"
-        srcset="
-          ../img/hero/hero_desk_1x.webp 1x,
-          ../img/hero/hero_desk_2x.webp 2x
-        "
-      />
-    </picture>
+    <!-- Photo -->
+    <div class="hero-img-wrapper">
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/hero/hero_desk_1x.png 1x,
+            ../img/hero/hero_desk_2x.png 2x
+          "
+        />
+        <source
+          type="image/webp"
+          srcset="
+            ../img/hero/hero_desk_1x.webp 1x,
+            ../img/hero/hero_desk_2x.webp 2x
+          "
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/hero/hero_tablet_1x.png 1x,
+            ../img/hero/hero_tablet_2x.png 2x
+          "
+        />
+        <source
+          type="image/webp"
+          srcset="
+            ../img/hero/hero_tablet_1x.webp 1x,
+            ../img/hero/hero_tablet_2x.webp 2x
+          "
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/hero/hero_mobile_1x.png 1x,
+            ../img/hero/hero_mobile_2x.png 2x
+          "
+        />
+        <source
+          type="image/webp"
+          srcset="
+            ../img/hero/hero_mobile_1x.webp 1x,
+            ../img/hero/hero_mobile_2x.webp 2x
+          "
+        />
+
+        <img
+          class="hero-photographer-image"
+          src="../img/hero/hero_mobile_1x.png"
+          alt="photographer"
+        />
+      </picture>
+    </div>
   </div>
 </section>
