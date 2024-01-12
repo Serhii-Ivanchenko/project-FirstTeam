@@ -79,6 +79,16 @@ h2 {
     }
 }
 
+h2:nth-child(even) {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+h2:nth-child(even) {
+        margin-bottom: 50px;
+    }
+}
+
 .accent {
     color: #BEA69E;
 }
