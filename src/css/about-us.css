@@ -37,6 +37,12 @@
 .about-img{
   margin-bottom: 40px;
 }
+
+@media (min-width: 1001px) and (max-width: 4000px) {
+  .image-about{
+    border-radius: 1000px;
+  }
+}
 /* text about*/
 .about-text{
   font-size: 14px;
@@ -57,6 +63,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
     gap: 20px;
   }
  }
@@ -85,7 +92,7 @@
   height: 215px;
 }
 
-@media (min-width: 1280px) and (max-width: 1440px) {
+@media (min-width: 1280px) and (max-width: 2000px) {
   .wrapper-desktop {
     display:flex;
     gap:40px;
