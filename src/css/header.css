@@ -162,7 +162,9 @@
       line-height: 1.55;
       text-transform: uppercase;
 
-      padding: 16px 58px;
+      /* padding: 16px 58px; */
+      min-width: 186px;
+      height: 60px;
       border-radius: 12px;
 
       display: inline-flex;
@@ -181,8 +183,7 @@
 
   @media only screen and (min-width: 1280px) {
     .header-nav-link {
-      padding-right: 84px;
-      padding-left: 84px;
+      min-width: 238px;
     }
   }
 
@@ -253,6 +254,9 @@
 
   display: flex;
   flex-direction: column;
+
+  padding-top: 180px;
+  padding-left: 20px;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -265,6 +269,8 @@
 .mobile-menu{
   background-image: url(../img/menu/menu_tablet_1x.jpg);
   width: 480px;
+  padding-top: 232px;
+  padding-left: 64px;
 }
 }
 
@@ -306,15 +312,15 @@
   flex-direction: column;
   gap: 20px;
 
-  margin-top: 180px;
-  margin-left: 20px;
-}
+  /* margin-top: 180px;
+  /* margin-left: 20px; */
+} 
 
 @media only screen and (min-width: 768px) {
   .mobile-menu-list{
     gap: 28px;
-    margin-top: 232px;
-    margin-left: 64px;
+    /* margin-top: 232px;
+    margin-left: 64px; */
     
   }
 }
