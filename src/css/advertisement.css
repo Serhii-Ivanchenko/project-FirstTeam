@@ -1,15 +1,16 @@
-.advertisement.section {
+.running-line-section.section {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 @media only screen and (min-width: 768px) {
-.advertisement.section {
+    .running-line-section.section {
         padding-top: 24px;
         padding-bottom: 24px;
     }
 }
 
-.advertisement-container.container {
+.running-line-container.container {
     padding-left: 0;
     padding-right: 0;
 }
@@ -24,14 +25,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-.running-line {
+    .running-line {
         font-size: 40px;
         line-height: 1.25;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-.running-line {
+    .running-line {
         font-size: 59px;
         line-height: 1.08;
         text-align: center;
@@ -53,6 +54,7 @@
     animation-timing-function: cubic-bezier(0.57, 0.02, 0.43, 1.01);
     animation-iteration-count: infinite;
 }
+
 .running-line:hover .running-text {
     animation-play-state: paused;
 }
