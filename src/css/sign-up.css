@@ -179,7 +179,7 @@
 
     .signup-img{
       background: transparent;
-      box-shadow: -35.562px 17.781px 25.44px 0px rgba(0, 0, 0, 0.26);
+      filter: drop-shadow(-35px 17px 5px rgba(0, 0, 0, 0.26));
     }
 
     .signup-camera {
