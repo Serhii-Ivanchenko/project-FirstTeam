@@ -4,13 +4,28 @@
     <ul class="reviews-card">
       <li class="reviews-items">
         <div class="reviews-items-item">
-          <img
-            class="reviews-image"
-            src="./img/reviews/user_1_1x.jpg"
-            alt="student-one"
-            width="56"
-            height="56"
-          />
+          <picture>
+            <source
+              srcset="
+                /img/reviews/user_1_1x.webp 1x,
+                /img/reviews/user_1_2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /img/reviews/user_1_1x.jpg 1x,
+                /img/reviews/user_1_2x.jpg 2x
+              "
+            />
+            <img
+              class="reviews-image"
+              src="./img/reviews/user_1_1x.jpg"
+              alt="student-one"
+              width="56"
+              height="56"
+            />
+          </picture>
 
           <div class="reviews-name">
             <h3 class="reveiews-student-name">Abraham Baker</h3>
@@ -19,19 +34,19 @@
 
           <div class="reviews-rank">
             <svg class="reviews-star" width="16" height="16">
-              <use href="./img/icons.svg#icon-star"></use>
+              <use href="/img/icons.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" width="16" height="16">
+              <use href="/img/icons.svg#icon-star"></use>
             </svg>
             <svg class="reviews-star" width="16" height="16">
               <use href="./img/icons.svg#icon-star"></use>
             </svg>
             <svg class="reviews-star" width="16" height="16">
-              <use href="./img/icons.svg#icon-star"></use>
-            </svg>
-            <svg class="reviews-star" width="16" height="16">
-              <use href="./img/icons.svg#icon-star"></use>
+              <use href="/img/icons.svg#icon-star"></use>
             </svg>
             <svg class="reviews-star-none" width="16" height="16">
-              <use href="./img/icons.svg#icon-star"></use>
+              <use href="/img/icons.svg#icon-star"></use>
             </svg>
           </div>
         </div>
@@ -48,13 +63,28 @@
 
       <li class="reviews-items desktop">
         <div class="reviews-items-item">
-          <img
-            class="reviews-image"
-            src="../img/reviews/user_2_1x.jpg"
-            alt="student-one"
-            width="56"
-            height="56"
-          />
+          <picture>
+            <source
+              srcset="
+                /img/reviews/user_2_1x.webp 1x,
+                /img/reviews/user_2_2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /img/reviews/user_2_1x.jpg 1x,
+                /img/reviews/user_2_2x.jpg 2x
+              "
+            />
+            <img
+              class="reviews-image"
+              src="./img/reviews/user_2_1x.jpg"
+              alt="student-one"
+              width="56"
+              height="56"
+            />
+          </picture>
 
           <div class="reviews-name">
             <h3 class="reveiews-student-name">Amanda Lowery</h3>
