@@ -108,47 +108,49 @@
       <picture>
         <!-- Desktop screen -->
         <source
-          media="(min-width: 1280px)"
           srcset="
-            ../img/hero/hero_desk_1x.png 1x,
-            ../img/hero/hero_desk_2x.png 2x
+            /img/hero/hero_desk_1x.webp 1x,
+            /img/hero/hero_desk_2x.webp 2x
           "
+          type="image/webp"
+          media="(min-width: 1280px)"
         />
         <source
-          type="image/webp"
-          srcset="
-            ../img/hero/hero_desk_1x.webp 1x,
-            ../img/hero/hero_desk_2x.webp 2x
-          "
+          srcset="/img/hero/hero_desk_1x.png 1x, /img/hero/hero_desk_2x.png 2x"
+          media="(min-width: 1280px)"
         />
+
         <!-- Tablet screen -->
         <source
-          media="(min-width: 768px)"
           srcset="
-            ../img/hero/hero_tablet_1x.png 1x,
-            ../img/hero/hero_tablet_2x.png 2x
+            /img/hero/hero_tablet_1x.webp 1x,
+            /img/hero/hero_tablet_2x.webp 2x
           "
+          type="image/webp"
+          media="(min-width: 768px)"
         />
+        <source
+          srcset="
+            /img/hero/hero_tablet_1x.png 1x,
+            /img/hero/hero_tablet_2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <!-- Mobile screen -->
         <source
           type="image/webp"
           srcset="
-            ../img/hero/hero_tablet_1x.webp 1x,
-            ../img/hero/hero_tablet_2x.webp 2x
+            /img/hero/hero_mobile_1x.webp 1x,
+            /img/hero/hero_mobile_2x.webp 2x
           "
+          media="(max-width: 767px)"
         />
-        <!-- Mobile screen -->
         <source
           media="(max-width: 767px)"
           srcset="
-            ../img/hero/hero_mobile_1x.png 1x,
-            ../img/hero/hero_mobile_2x.png 2x
-          "
-        />
-        <source
-          type="image/webp"
-          srcset="
-            ../img/hero/hero_mobile_1x.webp 1x,
-            ../img/hero/hero_mobile_2x.webp 2x
+            /img/hero/hero_mobile_1x.png 1x,
+            /img/hero/hero_mobile_2x.png 2x
           "
         />
 
