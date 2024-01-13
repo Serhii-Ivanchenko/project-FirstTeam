@@ -8,8 +8,15 @@
     line-height: 1.25;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .signup{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .signup-section{
     display: flex;
     align-items: flex-start;
     gap: 60px;
@@ -34,13 +41,14 @@
   }
 }
 
-.signup--wrapper{
+.signup-wrapper{
   display: flex;
   flex-direction: column;
+  outline: transparent;
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
-  .signup--wrapper {
+  .signup-wrapper {
     gap: 14px;
   }
 }
@@ -66,6 +74,7 @@
 }
 @media screen and (min-width: 768px) {
   .signup-input {
+    display: block;
     width: 100%;
     height: 60px;
 
@@ -79,17 +88,18 @@
   border: 1px solid rgba(255, 255, 255, 0.50);
 }
 
-.textarea {
+.signup-textarea {
   height: 112px;
   margin-bottom: 40px;
+  resize: none;
 }
 @media screen and (min-width: 768px) {
-  .textarea {
+  .signup-textarea {
     height: 119px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .textarea {
+@media screen and (min-width: 1280px) {
+  .signup-textarea {
     height: 120px;
   }
 }
@@ -151,13 +161,13 @@
   display: none;
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .signup-wrapper-picture {
       display: flex;
       align-items: flex-end;
       gap: 20px;
     }
-  
+
     .signup-lens {
       width: 180px;
       height: 288px;
@@ -166,7 +176,12 @@
       border-radius: 1000px;
       background: #BEA69E;
     }
-  
+
+    .signup-img{
+      background: transparent;
+      box-shadow: -35.562px 17.781px 25.44px 0px rgba(0, 0, 0, 0.26);
+    }
+
     .signup-camera {
       width: 340px;
       height: 540px;
