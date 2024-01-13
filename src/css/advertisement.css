@@ -1,6 +1,9 @@
 .running-line-section.section {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media only screen and (min-width: 768px) {
