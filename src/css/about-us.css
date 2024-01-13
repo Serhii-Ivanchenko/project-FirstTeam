@@ -1,15 +1,6 @@
 /*title about*/
-.about{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .about-title{
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
+  
 }
 
 @media (min-width: 768px) {
@@ -34,7 +25,7 @@
   }
 }
 /* img about*/
-.about-img{
+.image-about{
   margin-bottom: 40px;
 }
 
