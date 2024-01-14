@@ -79,6 +79,13 @@
     gap: 20px;
    }
   }
+
+@media (min-width: 320px) {
+  .wrapper1 {
+    width: 335px;
+  }
+}
+
 @media (min-width: 768px) {
   .wrapper1 {
     width: 280px;
@@ -88,6 +95,13 @@
 @media (min-width: 1280px) {
   .wrapper1 {
     width: 268px;
+  }
+}
+
+@media (min-width: 320px) {
+  .wrapper2 {
+    width: 335px;
+    height: 127px;
   }
 }
 
