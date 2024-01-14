@@ -24,7 +24,6 @@
 
 .menu-icon-camera {
   /* fill: #bea69e66; */
-  outline: 1px solid red;
 }
 
 .icon-camera-box{
@@ -58,7 +57,8 @@
   background: transparent;
   width: 32px;
   height: 22px;
-  outline: 1px solid red;
+  stroke: #FFFFFF;
+ 
 }
 
 @media only screen and (min-width: 768px) {
@@ -83,7 +83,7 @@
 
 .header-icon{
   fill: white;
-  outline: 1px solid red;
+ 
 
 }
 
@@ -91,8 +91,8 @@
 @media only screen and (min-width: 768px) {
   .header-logo{
     margin-right: 301px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -109,8 +109,8 @@
     justify-content: center;
     flex-shrink: 0;
 
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 19px;
+    padding-left: 19px;
      max-width: 335px; 
 
     border-radius: 12px;
@@ -159,7 +159,7 @@
 
       font-size: 18px;
       font-weight: 700;
-      line-height: 1.55;
+      /* line-height: 1.55; */
       text-transform: uppercase;
 
       /* padding: 16px 58px; */
@@ -202,8 +202,8 @@
   }
 
   .nav-link{
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -246,7 +246,7 @@
   flex-shrink: 0;
 
   background: var(--brown, #bea69e);
-  background-image: url(../img/menu/menu_mobile_1x.jpg);
+  background-image: image-set(url(../img/menu/menu_mobile_1x.webp) type("image/webp"), url(../img/menu/menu_mobile_1x.jpg) type("image/jpg")); 
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -261,13 +261,13 @@
 
 @media screen and (min-resolution: 192dpi) {
   .mobile-menu{
-  background-image: url(../img/menu/menu_mobile_2x.jpg);
+  background-image: image-set(url(../img/menu/menu_mobile_2x.webp) type("image/webp"), url(../img/menu/menu_mobile_2x.jpg) type("image/jpg"));
   }
 }
 
 @media only screen and (min-width: 768px){
 .mobile-menu{
-  background-image: url(../img/menu/menu_tablet_1x.jpg);
+  background-image: image-set(url(../img/menu/menu_tablet_1x.webp) type("image/webp") , url(../img/menu/menu_tablet_1x.jpg) type("image/jpg"));
   width: 480px;
   padding-top: 232px;
   padding-left: 64px;
@@ -277,7 +277,7 @@
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .mobile-menu{
-    background-image: url(../img/menu/menu_tablet_2x.jpg)
+    background-image: image-set(url(../img/menu/menu_tablet_2x.webp) type("image/webp"), url(../img/menu/menu_tablet_2x.jpg) type("image/jpg"))
   }
 }
 
@@ -293,9 +293,7 @@
   align-items: center;
   justify-content: center;
 
-  color: #2e2f42;
-
-  outline: 1px solid red;
+  stroke: #2e2f42;
 }
 
 @media only screen and (min-width: 768px) {
