@@ -1,10 +1,10 @@
 .signup {
-  width: 335px;
+  max-width: 335px;
   line-height: 1.29;
 }
 @media screen and (min-width: 768px) {
   .signup {
-    width: 480px;
+    max-width: 480px;
     line-height: 1.25;
   }
 }
