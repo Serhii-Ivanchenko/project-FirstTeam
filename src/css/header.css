@@ -22,10 +22,6 @@
  }  
 
 
-.menu-icon-camera {
-  /* fill: #bea69e66; */
-}
-
 .icon-camera-box{
   width: 32px;
   height: 32px;
@@ -159,10 +155,8 @@
 
       font-size: 18px;
       font-weight: 700;
-      /* line-height: 1.55; */
       text-transform: uppercase;
 
-      /* padding: 16px 58px; */
       min-width: 186px;
       height: 60px;
       border-radius: 12px;
@@ -309,16 +303,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  /* margin-top: 180px;
-  /* margin-left: 20px; */
 } 
 
 @media only screen and (min-width: 768px) {
   .mobile-menu-list{
     gap: 28px;
-    /* margin-top: 232px;
-    margin-left: 64px; */
     
   }
 }
