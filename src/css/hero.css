@@ -1,45 +1,21 @@
 /* < !-- title --> */
 .hero {
     max-width: 1440px;
-    padding: 20px 20px 80px 20px;
+    padding: 0 20px 80px 20px;
     margin-left: auto;
     margin-right: auto;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../img/background/Graphic_mobile_1x.png);
 }
 
-@media (min-resolution: 192dpi) {
-    .hero {
-        background-image: url(../img/background/Graphic_mobile_2x.png);
-    }
-}
 
 @media only screen and (min-width: 768px) {
     .hero {
-        padding: 40px 32px 100px 32px;
-        background-image: url(../img/background/Graphic_tablet_1x.png);
-    }
-}
-
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero {
-        background-image: url(../img/background/Graphic_tablet_2x.png);
+        padding: 0 32px 100px 32px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .hero {
-        padding: 80px 100px 150px 100px;
-        background-image: url(../img/background/Graphic_1x.png);
-    }
-}
-
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-    .hero {
-        background-image: url(../img/background/Graphic_2x.png);
+        padding: 0 100px 150px 100px;
     }
 }
 
@@ -50,7 +26,6 @@
     min-width: 280px;
     max-width: 335px;
     overflow: hidden;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -65,7 +40,6 @@
         position: relative;
         padding: 80px 50px 50px;
         max-width: 1080px;
-
     }
 }
 
