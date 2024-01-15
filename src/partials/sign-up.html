@@ -35,11 +35,28 @@
         </div>
         <button type="submit" class="signup-button">Send</button>
       </form>
-      <p class="signup-script">
-        By clicking on &#8220;Send&#8221; button, you agree to our
-        <a href="" class="signup-link">Privacy Policy</a>, <br />
-        and allow Promodo to use this information for marketing purposes.
-      </p>
+
+      <p id="myJS-ONE" class="signup-script"></p>
+      <script>
+        // Функция для изменения текста в зависимости от ширины экрана
+        function updateContent() {
+          var screenWidth = window.innerWidth;
+
+          // Если ширина экрана меньше или равна 320px, меняем содержимое
+          if (screenWidth <= 400) {
+            document.getElementById('myJS-ONE').innerHTML =
+              ' By clicking on &#8220;Send&#8221; button, you agree to our <a href="" class="signup-link">Privacy Policy</a> and allow Promodo to use this information for marketing purposes.';
+          } else {
+            // Возвращаем исходный текст, если ширина экрана больше 320px
+            document.getElementById('myJS-ONE').innerHTML =
+              ' By clicking on &#8220;Send&#8221; button, you agree to our <a href="" class="signup-link">Privacy Policy</a> <br />  and allow Promodo to use this information for marketing purposes.';
+          }
+        }
+
+        // Вызываем функцию при загрузке страницы и изменении размеров окна
+        window.onload = updateContent;
+        window.onresize = updateContent;
+      </script>
     </div>
     <div class="signup-wrapper-picture">
       <div class="signup-lens">

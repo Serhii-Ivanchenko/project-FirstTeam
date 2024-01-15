@@ -28,14 +28,14 @@
 }
 
 .signup-text {
-  width: 295px;
+  max-width: 295px;
   font-size: 14px;
   letter-spacing: -0.02em;
   margin-bottom: 41px;
 }
 @media screen and (min-width: 768px) {
   .signup-text {
-    width: 100%;
+    max-width: 100%;
     font-size: 16px;
     margin-bottom: 40px;
   }
