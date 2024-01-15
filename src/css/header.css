@@ -233,10 +233,17 @@
     z-index: 999;
 }
 
+@media only screen and (min-width: 1280px) {
+  .backdrop {
+    display: none;
+  }
+}
+
 .backdrop.is-open {
   visibility: visible;
   opacity: 1;
 }
+
 
 
 .mobile-menu {
