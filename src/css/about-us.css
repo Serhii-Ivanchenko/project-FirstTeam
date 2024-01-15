@@ -1,0 +1,71 @@
+
+/* img about*/
+.image-about{
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .image-about{
+    margin-bottom: 50px;
+    width: 704px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .image-about {
+    margin-bottom: 0;
+    width: 488px;
+    height: 260px;
+  }
+}
+
+
+
+/* text about*/
+.about-text{
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+ }
+ 
+
+ @media (min-width: 768px) {
+  .about-text{
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 280px;
+
+  }
+ }
+
+ 
+  .wrapper-abouttext{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+  }
+ 
+
+ @media (min-width: 768px) {
+  .wrapper-abouttext {
+    flex-direction: row;
+    gap: 40px;
+    }
+ }
+
+ @media (min-width: 1280px) {
+   .wrapper-abouttext{
+    gap: 20px;
+    
+   }
+  }
+
+@media (min-width: 1280px) {
+  .about-box{
+    display: flex;
+    gap: 40px;
+  }
+}
+
