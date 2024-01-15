@@ -13,94 +13,88 @@
     <!-- hero-rewiews -->
     <div class="hero-reviews-wrapper">
       <div class="hero-reviews-container">
-        <div class="hero-img-container">
-          <ul class="hero-reviews-list">
-            <li class="hero-reviews-item">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    ../img/hero/girl_1_1x.webp 1x,
-                    ../img/hero/girl_1_2x.webp 2x
-                  "
-                />
-                <img
-                  class="hero-reviews-image"
-                  src="../img/hero/girl_1_1x.png"
-                  srcset="
-                    ../img/hero/girl_1_1x.png 1x,
-                    ../img/hero/girl_1_2x.png 2x
-                  "
-                  alt="girl"
-                  width="44"
-                  height="44"
-                />
-              </picture>
-            </li>
-            <li class="hero-reviews-item">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    ../img/hero/boy_1x.webp 1x,
-                    ../img/hero/boy_2x.webp 2x
-                  "
-                />
-                <img
-                  class="hero-reviews-image"
-                  src="../img/hero/boy_1x.png"
-                  srcset="../img/hero/boy_1x.png 1x, ../img/hero/boy_2x.png 2x"
-                  alt="boy"
-                  width="44"
-                  height="44"
-                />
-              </picture>
-            </li>
-            <li class="hero-reviews-item">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    ../img/hero/girl_2_1x.webp 1x,
-                    ../img/hero/girl_2_2x.webp 2x
-                  "
-                />
-                <img
-                  class="hero-reviews-image"
-                  src="../img/hero/girl_2_1x.png"
-                  srcset="
-                    ../img/hero/girl_2_1x.png 1x,
-                    ../img/hero/girl_2_2x.png 2x
-                  "
-                  alt="girl"
-                  width="44"
-                  height="44"
-                />
-              </picture>
-            </li>
-          </ul>
-        </div>
+        <ul class="hero-reviews-list">
+          <li class="hero-reviews-item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ../img/hero/girl_1_1x.webp 1x,
+                  ../img/hero/girl_1_2x.webp 2x
+                "
+              />
+              <img
+                class="hero-reviews-image"
+                src="../img/hero/girl_1_1x.png"
+                srcset="
+                  ../img/hero/girl_1_1x.png 1x,
+                  ../img/hero/girl_1_2x.png 2x
+                "
+                alt="girl"
+                loading="lazy"
+                width="44"
+                height="44"
+              />
+            </picture>
+          </li>
+          <li class="hero-reviews-item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="../img/hero/boy_1x.webp 1x, ../img/hero/boy_2x.webp 2x"
+              />
+              <img
+                class="hero-reviews-image"
+                src="../img/hero/boy_1x.png"
+                srcset="../img/hero/boy_1x.png 1x, ../img/hero/boy_2x.png 2x"
+                alt="boy"
+                loading="lazy"
+                width="44"
+                height="44"
+              />
+            </picture>
+          </li>
+          <li class="hero-reviews-item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ../img/hero/girl_2_1x.webp 1x,
+                  ../img/hero/girl_2_2x.webp 2x
+                "
+              />
+              <img
+                class="hero-reviews-image"
+                src="../img/hero/girl_2_1x.png"
+                srcset="
+                  ../img/hero/girl_2_1x.png 1x,
+                  ../img/hero/girl_2_2x.png 2x
+                "
+                alt="girl"
+                loading="lazy"
+                width="44"
+                height="44"
+              />
+            </picture>
+          </li>
+        </ul>
+
         <div class="hero-wrapper-first">
-          <a class="hero-reviews-id" href="#reviews">
-            <span class="id-text">Our happy <br />students</span>
-          </a>
-          <span
-            ><svg class="hero-icon-arrow" width="18" height="9">
-              <use href="../img/icons.svg#icon-Arrow-straight"></use>
-            </svg>
-          </span>
+          <a class="hero-reviews-id" href="#reviews"> Our happy students </a>
+
+          <svg class="hero-icon-arrow" width="18" height="9">
+            <use href="../img/icons.svg#icon-Arrow-straight"></use>
+          </svg>
         </div>
       </div>
       <div class="hero-wrapper-second">
-        <span class="icon-star-span">
-          <svg class="hero-icon-star" width="20" height="20">
-            <use href="../img/icons.svg#icon-star"></use>
-          </svg>
-        </span>
-        <p>
-          Reviews <br />
-          <span>+1500</span>
-        </p>
+        <svg class="hero-icon-star" width="20" height="20">
+          <use href="../img/icons.svg#icon-star"></use>
+        </svg>
+        <div class="reviews-box">
+          <p>Reviews</p>
+          <p>+1500</p>
+        </div>
       </div>
     </div>
     <!-- Photo -->
@@ -158,6 +152,7 @@
           class="hero-photographer-image"
           src="../img/hero/hero_mobile_1x.png"
           alt="photographer"
+          loading="lazy"
         />
       </picture>
     </div>
