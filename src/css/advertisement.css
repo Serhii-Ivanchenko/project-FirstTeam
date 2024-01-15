@@ -1,65 +1,76 @@
-.running-line-section.section {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 80px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.running-line-section {
+    padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-    .running-line-section.section {
-        padding-top: 24px;
-        padding-bottom: 24px;
+    .running-line-section {
+        padding-bottom: 50px;
     }
 }
 
-.running-line-container.container {
-    padding-left: 0;
-    padding-right: 0;
+@media only screen and (min-width: 1280px) {
+    .running-line-section {
+        padding-bottom: 75px;
+    }
+}
+
+.running-line-container {
+    max-width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
 }
 
 .running-line {
     display: flex;
-    overflow: hidden;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+    animation-name: marqueeLine;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 400%;
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) {
     .running-line {
         font-size: 40px;
         line-height: 1.25;
+        width: 300%;
+        animation-duration: 10s;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .running-line {
+        width: 200%;
         font-size: 59px;
         line-height: 1.08;
         text-align: center;
+        animation-duration: 10s;
+        animation-timing-function: cubic-bezier(0.57, 0.02, 0.43, 1.01);
     }
 }
 
-.running-line-inner {
-    display: flex;
-}
-
 .running-text {
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: cubic-bezier(0.57, 0.02, 0.43, 1.01);
-    animation-iteration-count: infinite;
+    width: 100%;
 }
 
-.running-line:hover .running-text {
-    animation-play-state: paused;
+@media only screen and (min-width: 768px) {
+.running-text {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
+
+.running-line:hover {
+    animation-play-state: paused;
+} 
 
 @keyframes marqueeLine {
     from {
@@ -67,6 +78,6 @@
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
