@@ -87,10 +87,17 @@
     font-style: italic;
     font-weight: 400;
 }
-@media only screen and (min-width: 768px){
-    .hero-name-span{
+@media only screen and (min-width: 768px) {
+    .hero-name-span {
         font-size: 60px;
-        line-height: 1.07;
+        line-height: 1.0667;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .hero-name-span {
+        font-size: 64px;
+        line-height: 1.0625;
+        
     }
 }
 .hero-text{
