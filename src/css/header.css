@@ -22,6 +22,10 @@
    justify-content: center;
  }
 
+ .header-buttons-wrapper {
+  display: flex;
+  gap: 14px;
+ }
 
  .icon-camera-box {
    width: 32px;
@@ -29,7 +33,6 @@
 
    border-radius: 50%;
    padding: 8px;
-   margin-right: 14px;
 
    display: flex;
    justify-content: center;
@@ -80,7 +83,6 @@
 
  .header-logo {
    display: flex;
-   flex-grow: 1;
    padding-top: 15px;
    padding-bottom: 15px;
  }
@@ -115,6 +117,7 @@
  .logo-and-nav-box {
    display: flex;
    align-items: center;
+   justify-content: space-between;
    flex-shrink: 0;
    flex-grow: 1;
 
@@ -206,7 +209,7 @@
      display: flex;
      gap: 28px;
    }
-   
+
 
    .nav-item {
      color: #FFF;
@@ -230,10 +233,10 @@
  }
 
  @media only screen and (min-width: 1440px) {
-  .nav-list {
-    gap: 40px;
-  }
-}
+   .nav-list {
+     gap: 40px;
+   }
+ }
 
 
  /* Mobile menu */
@@ -241,50 +244,40 @@
    position: fixed;
    top: 0;
    left: 0;
-
    background-color: rgba(18, 18, 18, 0.40);
    width: 100%;
    height: 100%;
-
-   opacity: 0;
-   visibility: hidden;
-   z-index: 999;
- }
-
- @media only screen and (min-width: 1280px) {
-   .backdrop {
-     display: none;
-   }
+   display: none;
+   z-index: 5;
  }
 
  .backdrop.is-open {
-   visibility: visible;
-   opacity: 1;
+   display: block;
  }
-
-
 
  .mobile-menu {
    position: fixed;
    top: 0;
    right: 0;
-
    width: 218px;
    height: 100vh;
    flex-shrink: 0;
-
-   background: var(--brown, #bea69e);
+   background: #bea69e;
    background-image: url(../img/menu/menu_mobile_1x.webp);
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: contain;
-
-
    display: flex;
    flex-direction: column;
-
    padding-top: 180px;
    padding-left: 20px;
+   z-index: 6;
+   transform: translate(100%);
+   transition: transform 400ms ease-in ;
+ }
+
+ .mobile-menu.is-open {
+   transform: translate(0);
  }
 
  @media (min-device-pixel-ratio: 2),
@@ -306,7 +299,7 @@
    @media (min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
-    .mobile-menu  {
+     .mobile-menu {
        background-image: url(../img/menu/menu_tablet_2x.webp);
      }
    }
@@ -336,6 +329,16 @@
    }
  }
 
+
+ .close-menu-icon {
+   transition: transform 500ms ease-in-out;
+ }
+
+ .close-menu:hover .close-menu-icon,
+ .close-menu:focus .close-menu-icon {
+   transform: rotate(180deg);
+ }
+
  .mobile-menu-list {
    display: flex;
    flex-direction: column;
@@ -357,6 +360,7 @@
    text-transform: uppercase;
  }
 
- .mobile-menu-link:hover, .mobile-menu-link:focus {
+ .mobile-menu-link:hover,
+ .mobile-menu-link:focus {
    font-weight: 700;
  }
