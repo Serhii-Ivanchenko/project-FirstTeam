@@ -23,6 +23,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .signup-section {
+    gap: 200px;
+  }
+}
+
 .signup-title {
   margin-bottom: 20px;
 }
@@ -177,7 +183,7 @@
 
     .signup-img{
       background: transparent;
-      filter: drop-shadow(-35px 17px 5px rgba(0, 0, 0, 0.26));
+      filter: drop-shadow(-35px 17px 12px rgba(0, 0, 0, 0.26));
     }
 
     .signup-camera {
@@ -188,4 +194,26 @@
       border-radius: 1000px;
       background: #1D1D1D;
     }
+}
+
+@media screen and (min-width: 1440px) {
+  .signup-lens {
+    width: 190px;
+    padding: 63px 18px 62px;
+  }
+
+  .signup-img {
+    width: 163px;
+    height: 154px;
+  }
+
+  .signup-camera {
+    width: 350px;
+    padding: 139px 48px 88px;
+  }
+
+  .img-camera {
+    width: 254px;
+    height: 313px;
+  }
 }
