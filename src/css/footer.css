@@ -178,8 +178,8 @@
   .footer-link:focus,
   .address:hover,
   .address:focus,
-  .footer-text:hover,
-  .footer-text:focus {
+  .footer-text.link:hover,
+  .footer-text.link:focus {
     color: #bea69e;
     font-weight: 700;
   }
