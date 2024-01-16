@@ -38,9 +38,8 @@
     color: #FFF;
         font-size: 14px;
         font-weight: 400;
-        line-height: 1.28;
+        line-height: 1.29;
         letter-spacing: -0.02em;
-
         margin-bottom: 40px;
 }
 
@@ -48,26 +47,12 @@
   .courses-text {
         font-size: 16px;
         line-height: 1.25;
-
-        max-width: 381px;
         margin-bottom: 0;
   }
 
   .courses-title-text-box{
     display: flex;
     margin-bottom: 50px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-.courses-text{
-    max-width: 405px;
-}
-}  
-
-@media only screen and (min-width: 1440px) {
-  .courses-text {
-    max-width: 565px;
   }
 }
 

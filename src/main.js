@@ -1,5 +1,5 @@
 let menuBtn = document.querySelector('.open-menu');
-let menu = document.querySelector('.backdrop');
+let menu = document.querySelector('.mobile-menu');
 let backdrop = document.querySelector('.backdrop')
 let menuItem = document.querySelectorAll('.menu-close');
 
