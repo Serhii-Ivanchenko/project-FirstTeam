@@ -107,7 +107,7 @@
 
  @media only screen and (min-width: 1280px) {
    .header-logo {
-     margin-right: 97px;
+     margin-right: auto;
    }
  }
 
@@ -141,6 +141,12 @@
      padding-right: 50px;
      padding-left: 50px;
      margin-right: 20px;
+   }
+ }
+
+ @media only screen and (min-width: 1440px) {
+   .logo-and-nav-box {
+     max-width: 982px;
    }
  }
 
@@ -200,6 +206,7 @@
      display: flex;
      gap: 28px;
    }
+   
 
    .nav-item {
      color: #FFF;
@@ -218,9 +225,15 @@
    .nav-link:hover,
    .nav-link:focus {
      color: #BEA69E;
+     font-weight: 700;
    }
  }
 
+ @media only screen and (min-width: 1440px) {
+  .nav-list {
+    gap: 40px;
+  }
+}
 
 
  /* Mobile menu */
@@ -344,6 +357,6 @@
    text-transform: uppercase;
  }
 
- .mobile-menu-link.current {
+ .mobile-menu-link:hover, .mobile-menu-link:focus {
    font-weight: 700;
  }
