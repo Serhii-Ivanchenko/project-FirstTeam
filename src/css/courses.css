@@ -65,6 +65,12 @@
 }
 }  
 
+@media only screen and (min-width: 1440px) {
+  .courses-text {
+    max-width: 565px;
+  }
+}
+
 .courses-list{
  list-style-type: none;
  margin: 0; 
@@ -222,5 +228,11 @@
 @media only screen and (min-width: 1280px) {
 .courses-list-text{
     max-width: 283px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .courses-list-text {
+    max-width: 336px;
   }
 }
