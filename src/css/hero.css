@@ -235,12 +235,12 @@
     transition: scale 250ms ease-in;
 }
 .hero-reviews-id:hover, .hero-reviews-id:focus {
-scale: (1.1);
+transform: scale(1.1);
 }
 
 .hero-reviews-id:hover + .hero-icon-arrow {
 transform: rotate(90deg);
-scale: (1.1);
+transform: scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
