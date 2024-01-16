@@ -232,15 +232,14 @@
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.04em;
-    transition: scale 250ms ease-in;
+    transition: transform 250ms ease-in;
 }
 .hero-reviews-id:hover, .hero-reviews-id:focus {
 transform: scale(1.1);
 }
 
 .hero-reviews-id:hover + .hero-icon-arrow {
-transform: rotate(90deg);
-transform: scale(1.1);
+transform: scale(1.1), rotate(90deg);
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,7 +254,7 @@ transform: scale(1.1);
 
 .hero-icon-arrow {
     fill: #FFFFFF;
-    transition: transform 250ms ease, scale 250ms ease;
+    transition: transform 250ms ease;
 }
 
 @media only screen and (min-width: 768px) {
