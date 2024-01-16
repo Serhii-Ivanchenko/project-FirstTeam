@@ -42,6 +42,13 @@
         max-width: 1080px;
     }
 }
+@media only screen and (min-width: 1440px) {
+    .hero-container {
+        position: relative;
+        padding-right: 100px;
+        max-width: 1240px;
+    }
+}
 
 .hero-name {
     max-width: 295px;
@@ -323,6 +330,11 @@
         position: absolute;
         right: 50px;
         bottom: 0;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .hero-img-wrapper {
+        right: 100px;
     }
 }
 
