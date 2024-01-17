@@ -159,7 +159,9 @@
 .signup-link{
   text-decoration: underline;
 }
-
+.signup-link:hover, .signup-link:focus {
+  text-decoration: none;
+}
 /* Оформлення для div картинок */
 .signup-wrapper-picture{
   display: none;
