@@ -8,39 +8,41 @@ if (menuBtn) {
     menu.classList.toggle('is-open');
     backdrop.style.display = menu.classList.contains('is-open')
       ? 'block'
-      : 'none'
+      : 'none';
+    document.body.style.overflow = menu.classList.contains('is-open') ? 'hidden' : 'auto';
   });
-
+  
   menuItem.forEach(function (item) {
     item.addEventListener('click', function () {
       menu.classList.toggle('is-open');
       backdrop.style.display = 'none';
+      document.body.style.overflow = 'auto';
     });
   });
 
   backdrop.addEventListener('click', function () {
     menu.classList.remove('is-open');
     backdrop.style.display = 'none';
+    document.body.style.overflow = 'auto';
   })
 }
 
-// scale for Nav Links
-// document
-//   .querySelectorAll('.nav-link, .footer-link')
-//   .forEach(function (navLink) {
-//     navLink.addEventListener('mouseenter', function () {
-//       var parentNavItem = navLink.closest('.nav-item, .footer-nav-list-item, .footer-socials-item');
-//       if (parentNavItem) {
-//         parentNavItem.style.transform = 'scale(1.1)';
-//       }
-//     });
+// Removing mobile menu bg-img in landscape orientation
+  function updMobileMenuBg() {
+    var mobileMenu = document.querySelector('.mobile-menu');
+    var orientation = window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
 
-//     navLink.addEventListener('mouseleave', function () {
-//       var parentNavItem = navLink.closest(
-//         '.nav-item, .footer-nav-list-item, .footer-socials-item'
-//       );
-//       if (parentNavItem) {
-//         parentNavItem.style.transform = '';
-//       }
-//     });
-//   });
+    if (orientation === 'landscape') {
+      mobileMenu.style.backgroundImage = 'none';
+    } else {
+      mobileMenu.style.backgroundImage = 'url(../img/menu/menu_mobile_1x.webp)';
+    }
+  }
+
+  updMobileMenuBg();
+
+  window.addEventListener('orientationchange', function () {
+    setTimeout(updMobileMenuBg, 1);
+  });
+
+
