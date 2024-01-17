@@ -62,7 +62,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-.running-text {
+    .running-text {
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -70,7 +70,7 @@
 
 .running-line:hover {
     animation-play-state: paused;
-} 
+}
 
 @keyframes marqueeLine {
     from {
