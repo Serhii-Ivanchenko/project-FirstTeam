@@ -35,7 +35,7 @@ if (menuBtn) {
     if (orientation === 'landscape') {
       mobileMenu.style.backgroundImage = 'none';
     } else {
-      mobileMenu.style.backgroundImage = '';
+      mobileMenu.style.backgroundImage = '/src/img/menu/menu_mobile_1x.webp';
     }
   }
 
