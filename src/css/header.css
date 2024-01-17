@@ -275,6 +275,12 @@
    transition: transform 400ms ease-in;
  }
 
+@media screen and (max-width: 1279.98px) and (orientation: landscape) {
+  .mobile-menu {
+    background-image: none !important;
+  }
+}
+
  @media only screen and (min-width: 1280px) {
    .mobile-menu {
      display: none;
